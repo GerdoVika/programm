@@ -27,7 +27,7 @@ int main(){
     cin>>n;
     for (int i=0; i<n; i++)
     cin>>array_1[i];
-    array=delete_duplicates (n, array_1);
+    array=delete_annoying_primes(n, array_1);
     for (int i=0; i<n; i++)
     cout<<array[i]<<' ';
     return 0;
