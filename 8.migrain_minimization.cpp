@@ -12,11 +12,11 @@ int f1(int N,int n,int S,int sum){
 }      
 int migrain_minimization (int N){
     int n,S,sum;
-    cin>>N;
     return f1(N,n,S,sum);
 }
 int main(){
     int N;
+    cin>>N;
     cout<<migrain_minimization (N)*4;
     return 0;
 }
