@@ -3,7 +3,6 @@ using namespace std;
 class vector{
     int*arr;
     int size;
-    int cap;
     public:
     vector(int new_size){
         int* arr=new int [new_size];
@@ -35,7 +34,7 @@ class vector{
     int get_size(){
         return size;
     };
-    int operator [](int i){
+    int & operator [](int i){
         return arr[i];
     }
     
