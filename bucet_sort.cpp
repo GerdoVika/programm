@@ -10,10 +10,10 @@ int* bucet_sort(int min, int max, int*a, int size){
         int c=((arr[i]-min)/10)+1;
         arr1[c].push(arr[i]);
     }
-    int m;
+    int m=0;
     for (int i=0; i<k; i++){
         int e=m+arr1[i].size();
-        for (int n=m; n<e; n++){
+        for (int n=e-1; n!=m; n--){
             arr[n]=arr1[i].top();
             arr1[i].pop();
         }
